@@ -5,6 +5,174 @@
 body {
   padding: 0;
   margin: 0;
+  color: #000;
   font-size: 18px;
+  line-height: 26px;
   font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+a {
+  display: block;
+  text-decoration: none;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+button {
+  outline: none;
+  cursor: pointer;
+}
+span {
+  display: block;
+}
+input {
+  border: none;
+  outline: none;
+  font-weight: 500;
+}
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.btn {
+  font-weight: 700;
+  border-radius: 60px;
+}
+
+/* Header */
+
+#header {
+  background: url(../img/header-bg1.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  padding-top: 46px;
+  padding-bottom: 17px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__wrap {
+  display: flex;
+  align-items: center;
+}
+.header__menu {
+  display: flex;
+  align-items: center;
+  margin-right: 35px;
+}
+.header__item {
+  margin-right: 26px;
+}
+.header__item-link {
+  color: #000;
+  transition: 0.1s;
+  font-weight: 400;
+}
+.header__item-link:hover {
+  color: #0066b7;
+  transform: scale(1.03);
+}
+.header__phone {
+  margin-right: 66px;
+}
+.phone-number {
+  color: #000;
+  display: flex;
+  align-items: center;
+  transition: 0.1s;
+}
+.phone-number:hover {
+  color: #0066b7;
+}
+.phone-icon {
+  fill: #0066b3;
+  margin-right: 18px;
+}
+.header__social-web {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 15px;
+}
+.about {
+  width: 334px;
+  text-transform: uppercase;
+  color: #005caa;
+  font-weight: 700;
+  line-height: 19px;
+  font-size: 16px;
+  margin-top: 25px;
+}
+.offer {
+  margin-top: 42px;
+}
+.offer__title {
+  width: 615px;
+  font-size: 62px;
+  line-height: 73px;
+  text-transform: uppercase;
+}
+.offer__title-different {
+  color: #005caa;
+}
+.offer__subtitle {
+  font-size: 24px;
+  line-height: 28px;
+  color: #6f6f6f;
+  font-style: italic;
+  margin-top: 22px;
+}
+.offer__button-wrap {
+  margin-top: 32px;
+  display: inline-block;
+  margin-bottom: 41px;
+}
+.offer__btn {
+  color: #0066b7;
+  background: #fff;
+  margin-bottom: 24px;
+  text-align: center;
+  padding: 20px;
+  transition: 0.1s;
+}
+.offer__btn:last-child {
+  margin-bottom: 0;
+}
+.offer__btn:hover {
+  color: #fff;
+  background: #0066b7;
+}
+.buy-button {
+  color: #fff;
+  background: #0066b7;
+  transition: 0.1s;
+}
+.buy-button:hover {
+  background: #01599f;
+}
+.offer__postscript {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: #6f6f6f;
 }
