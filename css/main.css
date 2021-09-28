@@ -220,3 +220,49 @@ input {
   left: -5%;
   color: #005aab;
 }
+/* Tonometers */
+#tonometers {
+  padding: 50px 0;
+}
+.tonometers__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.tonometers__title-block {
+  margin-right: 20px;
+}
+.tonometers__title {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 50px;
+}
+.tonometers__subtitle {
+  line-height: 26px;
+  width: 313px;
+  margin-top: 30px;
+}
+
+.tonometers__list {
+  display: flex;
+}
+.tonometers__item {
+  padding: 34px 27px;
+  background: #e5e5e5;
+  border-radius: 50px;
+  text-align: center;
+  margin-right: 30px;
+}
+.tonometers__item:last-child {
+  margin-right: 0;
+}
+.tonometers__image {
+  max-height: 134px;
+  height: 100%;
+}
+.tonometers__about {
+  padding-bottom: 38px;
+}
+.tonometers__btn {
+  padding: 20px;
+}
