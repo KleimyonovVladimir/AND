@@ -266,3 +266,24 @@ input {
 .tonometers__btn {
   padding: 20px;
 }
+/* Opportunities */
+#opportunities {
+  padding: 50px 0;
+}
+.opportunities__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.opportunities__item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+.opportunities__img {
+  margin-right: 50px;
+}
+.opportunities__text {
+  width: 474px;
+}
