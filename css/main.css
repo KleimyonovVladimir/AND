@@ -24,6 +24,11 @@ h2 {
   font-size: 48px;
   line-height: 50px;
 }
+h3 {
+  font-size: 24px;
+  line-height: 28px;
+}
+
 a {
   display: block;
   text-decoration: none;
@@ -374,4 +379,82 @@ td:first-child {
 }
 .arrows {
   margin-left: 10px;
+}
+/* Manual */
+#manual {
+  padding: 100px 0;
+}
+.manual__title {
+  text-align: center;
+}
+.crossing__list {
+  margin-top: 30px;
+  position: relative;
+}
+.crossing__item {
+  display: flex;
+  margin-bottom: 30px;
+}
+.crossing__img-wrap {
+  background: #0063b1;
+  border-radius: 50%;
+  margin-right: 20px;
+  min-width: 50px;
+  height: 50px;
+  position: relative;
+}
+.crossing__text {
+  position: relative;
+}
+.crossing__img-wrap:before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/check-icon.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  transform: translate(-50%, -50%);
+  width: 28px;
+  height: 22px;
+  padding: 14px 10px;
+  top: 50%;
+  left: 50%;
+}
+
+#crossing .crossing__list .crossing__item:nth-child(n + 5) {
+  display: none;
+}
+
+#crossing.expand .crossing__list .crossing__item:nth-child(n + 5) {
+  display: flex;
+}
+
+#control {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #c4c4c4;
+  margin: 0 auto;
+  text-align: center;
+
+  width: fit-content;
+  transition: 0.1s ease;
+}
+.crossing__list::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #c4c4c4;
+  left: 0;
+  bottom: -15px;
+}
+#arrows-up {
+  fill: #c4c4c4;
+}
+#control:hover {
+  color: #979595;
+}
+#control:hover #arrows-up {
+  fill: #979595;
 }
