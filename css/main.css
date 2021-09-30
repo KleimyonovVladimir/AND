@@ -44,7 +44,7 @@ li {
   margin: 0;
 }
 button {
-  outline: none;
+  outline: auto;
   cursor: pointer;
 }
 span {
@@ -677,6 +677,7 @@ td:first-child {
   margin-bottom: 50px;
 }
 .form__input {
+  color: #000;
   width: 100%;
   display: block;
   padding: 6px;
@@ -686,4 +687,49 @@ td:first-child {
 }
 .form__input_third {
   margin-bottom: 115px;
+}
+.form__btn {
+  color: #fff;
+  background: #0066b7;
+  padding: 20px 55px;
+  transition: 0.1s;
+}
+.form__btn:hover {
+  background: #01599f;
+}
+#map {
+  position: relative;
+}
+.map__title {
+  position: relative;
+}
+.map__title::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: url(../img/cross.svg);
+  background-repeat: no-repeat;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+.map__contacts {
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px 24px;
+}
+.map__info {
+  display: flex;
+  align-items: flex-start;
+  margin: 20px 0;
+}
+.map__info:last-child {
+  margin: 0;
+}
+.map__info-text {
+  margin-left: 10px;
 }
