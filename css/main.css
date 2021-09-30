@@ -431,10 +431,11 @@ td:first-child {
 #crossing.expand .crossing__list .crossing__item:nth-child(n + 5) {
   display: flex;
 }
+.expand #arrows-up {
+  transform: rotate(0deg);
+}
 
 #control {
-  display: flex;
-  align-items: center;
   cursor: pointer;
   font-weight: 500;
   font-size: 24px;
@@ -442,9 +443,12 @@ td:first-child {
   color: #c4c4c4;
   margin: 0 auto;
   text-align: center;
+  display: flex;
+  align-items: center;
   width: fit-content;
   transition: 0.1s ease;
 }
+
 .crossing__list::after {
   content: "";
   position: absolute;
@@ -457,6 +461,8 @@ td:first-child {
 #arrows-up {
   margin-left: 10px;
   fill: #c4c4c4;
+  transform: rotate(180deg);
+  transition: transform 0.4s ease;
 }
 #control:hover {
   color: #979595;
