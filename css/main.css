@@ -330,7 +330,6 @@ input {
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
-  margin-top: 50px;
 }
 
 /* Style table headers and table data */
@@ -775,13 +774,83 @@ td:first-child {
 /* Index2.html */
 .header-2 {
   background-image: url(../img/header-bg2.jpg);
-  padding-top: 46px;
+  position: relative;
+}
+.header-2::before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/header-packaging1.png);
+  width: 412px;
+  height: 412px;
+  background-repeat: no-repeat;
+  top: 50%;
+  left: 45%;
 }
 .offer__postscript-2 {
   color: #fff;
 }
-.tonometers__image-wrap {
-}
+
 .location__list-2 {
   grid-template-columns: 1fr 1fr 1fr;
+}
+/* Index3.html */
+.header-3 {
+  background-image: url(../img/bg-3.jpg);
+  padding-top: 46px;
+}
+
+.offer__postscript-3 {
+  color: #000;
+}
+.opportunities__product-3 {
+  background: #e5e5e5;
+  border-radius: 50px;
+  padding: 84px 32px;
+  text-align: center;
+}
+.opportunities__product-text {
+  width: 240px;
+  margin: 0 auto;
+}
+
+.opportunities__btn {
+  margin-top: 35px;
+  padding: 20px 78px;
+  display: inline-block;
+}
+.equipment {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 124px;
+}
+.equipment .comparison__title-block {
+  margin-bottom: 30px;
+}
+.location__product-name {
+  width: 240px;
+  margin: 0 auto;
+}
+.location__list-3 {
+  display: block;
+}
+.location__item-3 {
+  background-color: transparent;
+  padding: 0;
+}
+.location__item-3 .table__row::before {
+  background: #e5e5e5;
+}
+.location__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 22px;
+}
+.location__img-block {
+  background: #e5e5e5;
+  border-radius: 50px;
+  padding: 50px 122px 38px;
+  text-align: center;
+}
+.location__btn-more {
+  padding-top: 24px;
 }
