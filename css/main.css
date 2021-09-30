@@ -118,7 +118,7 @@ input {
   fill: #0066b3;
   margin-right: 18px;
 }
-.header__social-web {
+.social-web {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 15px;
@@ -732,4 +732,13 @@ td:first-child {
 }
 .map__info-text {
   margin-left: 10px;
+}
+/* Footer */
+
+#footer {
+  padding: 64px 0 40px;
+}
+.footer {
+  display: flex;
+  align-items: center;
 }
