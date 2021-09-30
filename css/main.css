@@ -588,19 +588,27 @@ td:first-child {
   text-align: center;
 }
 /* Reviews */
-/* #reviews {
+#reviews {
   position: relative;
-} */
+  padding: 50px 0;
+}
 .reviews__title {
   text-align: center;
   margin-bottom: 64px;
 }
 .swiper {
+  width: 100%;
   height: auto;
-  padding: 0 90px;
-  margin: 0 -90px;
 }
-
+.swiper-inner-btn {
+  position: absolute;
+  top: calc(50% + 33px);
+  width: 1315px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0 15px;
+  z-index: 10;
+}
 .swiper-slide {
   background: #e5e5e5;
   border-radius: 31px;
@@ -652,4 +660,24 @@ td:first-child {
 .rating-mini > span.active {
   font-size: 25px;
   color: #da8f2e;
+}
+/* Form */
+.form__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+}
+.form__title {
+  margin-bottom: 50px;
+}
+.form__input {
+  width: 100%;
+  display: block;
+  padding: 6px;
+  position: relative;
+  border-bottom: 1px solid #000;
+  margin-bottom: 50px;
+}
+.form__input_third {
+  margin-bottom: 115px;
 }
