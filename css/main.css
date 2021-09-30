@@ -433,6 +433,8 @@ td:first-child {
 }
 
 #control {
+  display: flex;
+  align-items: center;
   cursor: pointer;
   font-weight: 500;
   font-size: 24px;
@@ -440,7 +442,6 @@ td:first-child {
   color: #c4c4c4;
   margin: 0 auto;
   text-align: center;
-
   width: fit-content;
   transition: 0.1s ease;
 }
@@ -454,6 +455,7 @@ td:first-child {
   bottom: -15px;
 }
 #arrows-up {
+  margin-left: 10px;
   fill: #c4c4c4;
 }
 #control:hover {
@@ -594,10 +596,9 @@ td:first-child {
   margin-bottom: 64px;
 }
 .swiper {
-  width: 100%;
   height: auto;
-  /* padding: 0 90px;
-  margin: 0 -90px; */
+  padding: 0 90px;
+  margin: 0 -90px;
 }
 
 .swiper-slide {

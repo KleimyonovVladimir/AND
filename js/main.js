@@ -2,12 +2,26 @@ $(document).ready(() => {
   $('#control').click(function () {
     $('#crossing').toggleClass('expand');
   });
+
   // $("#control").click(function () {
-  //   control.text(function () {
-  //     //change text based on condition
-  //     return $content.is(":visible") ? "свернуть" : "развернуть";
-  //   });
+  //   var any = document.getElementById('control');
+  //   document.toggle(any.innerText = "развернуть");
   // });
+
+  function toggleTxt(elem, anotherTxt) {
+    var txt = $("#control").text();
+
+    $("#control").click(function () {
+      if ($(this).text() == txt) {
+        $(this).text(anotherTxt);
+      } else {
+        $(this).text(txt);
+      }
+    });
+  };
+  toggleTxt($("#control"), "свернуть");
+
+
   const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
